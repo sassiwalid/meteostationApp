@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06FFCB7A99D0894C5C0819E4 /* Pods_meteoStationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB6107D668E685AB59DC9D1 /* Pods_meteoStationApp.framework */; };
+		0E720B991E3FB74100511277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E720B981E3FB74100511277 /* Constants.swift */; };
+		0E720B9B1E3FBB2200511277 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E720B9A1E3FBB2200511277 /* CurrentWeather.swift */; };
 		0EFEDE111E34EC46007E5C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEDE101E34EC46007E5C7F /* AppDelegate.swift */; };
 		0EFEDE131E34EC46007E5C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFEDE121E34EC46007E5C7F /* ViewController.swift */; };
 		0EFEDE161E34EC47007E5C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFEDE141E34EC47007E5C7F /* Main.storyboard */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E720B981E3FB74100511277 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0E720B9A1E3FBB2200511277 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		0EFEDE0D1E34EC46007E5C7F /* meteoStationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meteoStationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFEDE101E34EC46007E5C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFEDE121E34EC46007E5C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		0EFEDE2C1E34EC47007E5C7F /* meteoStationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meteoStationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFEDE301E34EC47007E5C7F /* meteoStationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meteoStationAppUITests.swift; sourceTree = "<group>"; };
 		0EFEDE321E34EC47007E5C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A855EED8B3597570D4C6F3 /* Pods-meteoStationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meteoStationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-meteoStationApp/Pods-meteoStationApp.release.xcconfig"; sourceTree = "<group>"; };
+		472DEF03C40448AFED4D5B90 /* Pods-meteoStationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meteoStationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meteoStationApp/Pods-meteoStationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB6107D668E685AB59DC9D1 /* Pods_meteoStationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meteoStationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FFCB7A99D0894C5C0819E4 /* Pods_meteoStationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E720B9C1E3FC2EC00511277 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E720B981E3FB74100511277 /* Constants.swift */,
+				0E720B9A1E3FBB2200511277 /* CurrentWeather.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E720B9D1E3FC30E00511277 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EFEDE121E34EC46007E5C7F /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		0EFEDE041E34EC42007E5C7F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				0EFEDE241E34EC47007E5C7F /* meteoStationAppTests */,
 				0EFEDE2F1E34EC47007E5C7F /* meteoStationAppUITests */,
 				0EFEDE0E1E34EC46007E5C7F /* Products */,
+				CDB9D3491BE32719829FD00B /* Pods */,
+				983B748A2119DCD29B32DD17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				0EFEDE101E34EC46007E5C7F /* AppDelegate.swift */,
-				0EFEDE121E34EC46007E5C7F /* ViewController.swift */,
+				0E720B9D1E3FC30E00511277 /* controller */,
+				0E720B9C1E3FC2EC00511277 /* Model */,
 				0EFEDE141E34EC47007E5C7F /* Main.storyboard */,
 				0EFEDE171E34EC47007E5C7F /* Assets.xcassets */,
 				0EFEDE191E34EC47007E5C7F /* LaunchScreen.storyboard */,
@@ -125,6 +154,23 @@
 			path = meteoStationAppUITests;
 			sourceTree = "<group>";
 		};
+		983B748A2119DCD29B32DD17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6107D668E685AB59DC9D1 /* Pods_meteoStationApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDB9D3491BE32719829FD00B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				472DEF03C40448AFED4D5B90 /* Pods-meteoStationApp.debug.xcconfig */,
+				39A855EED8B3597570D4C6F3 /* Pods-meteoStationApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EFEDE351E34EC47007E5C7F /* Build configuration list for PBXNativeTarget "meteoStationApp" */;
 			buildPhases = (
+				316B55748D9E86091610D2E5 /* [CP] Check Pods Manifest.lock */,
 				0EFEDE091E34EC42007E5C7F /* Sources */,
 				0EFEDE0A1E34EC42007E5C7F /* Frameworks */,
 				0EFEDE0B1E34EC42007E5C7F /* Resources */,
+				246B537874CAD8CA75DAE92E /* [CP] Embed Pods Frameworks */,
+				646697847C333119ECAF7EF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +306,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		246B537874CAD8CA75DAE92E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meteoStationApp/Pods-meteoStationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316B55748D9E86091610D2E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		646697847C333119ECAF7EF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meteoStationApp/Pods-meteoStationApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EFEDE091E34EC42007E5C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +361,8 @@
 			files = (
 				0EFEDE131E34EC46007E5C7F /* ViewController.swift in Sources */,
 				0EFEDE111E34EC46007E5C7F /* AppDelegate.swift in Sources */,
+				0E720B9B1E3FBB2200511277 /* CurrentWeather.swift in Sources */,
+				0E720B991E3FB74100511277 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +510,7 @@
 		};
 		0EFEDE361E34EC47007E5C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 472DEF03C40448AFED4D5B90 /* Pods-meteoStationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
@@ -424,6 +524,7 @@
 		};
 		0EFEDE371E34EC47007E5C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A855EED8B3597570D4C6F3 /* Pods-meteoStationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
@@ -512,6 +613,7 @@
 				0EFEDE371E34EC47007E5C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EFEDE381E34EC47007E5C7F /* Build configuration list for PBXNativeTarget "meteoStationAppTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +622,7 @@
 				0EFEDE3A1E34EC47007E5C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EFEDE3B1E34EC47007E5C7F /* Build configuration list for PBXNativeTarget "meteoStationAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +631,7 @@
 				0EFEDE3D1E34EC47007E5C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
