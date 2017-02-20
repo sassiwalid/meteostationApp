@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
   // the IBOutlets
   @IBOutlet weak var tableview: UITableView!
@@ -16,12 +16,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
   @IBOutlet weak var locationLabel: UILabel!
   @IBOutlet weak var currentmeteoImage: UIImageView!
   @IBOutlet weak var currentMeteoLabel: UILabel!
-  
+  var currentWeather:CurrentWeather!
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     tableview.delegate = self
     tableview.dataSource = self
+    currentWeather = CurrentWeather()
+    currentWeather.downloadWeatherDetails {
+      self.updateMainUI()
+    }
     print(CURRENT_WEATHER_URL)
   }
 
@@ -40,6 +43,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     return cell
   }
-
+  // function to update the UI
+  func updateMainUI() {
+    datelabel.text = currentWeather._date
+    locationLabel.text = currentWeather.cityName
+    currentTempLabel.text = "\(currentWeather._currentTemp!)"
+    currentMeteoLabel.text = currentWeather._weatherType
+    currentmeteoImage.image = UIImage(named:currentWeather._weatherType)
+  }
 }
 

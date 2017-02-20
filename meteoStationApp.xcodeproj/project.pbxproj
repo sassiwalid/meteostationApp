@@ -512,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 472DEF03C40448AFED4D5B90 /* Pods-meteoStationApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = meteoStationApp/Info.plist;
@@ -526,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39A855EED8B3597570D4C6F3 /* Pods-meteoStationApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = meteoStationApp/Info.plist;
